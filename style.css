@@ -562,7 +562,7 @@ main {
 	width: 150px;
 	height: 28px;
 	box-sizing: border-box;
-	padding-left: 29px;
+	padding-left: 28px;
 	margin-top: -1px;
 	background: url(img/h3-bg.png) no-repeat 3px 1px;
 	font: 14px/28px Lucida, Arial, sans-serif;
@@ -573,10 +573,19 @@ main {
 	list-style: none;
 	margin: 4px 0 0 35px;
 }
+.side-left ul.second{
+	margin-bottom: 3px;
+}
 .side-left ul li{
 	position: relative;
 	margin-bottom: 7px;
 	padding-left: 11px;
+}
+.side-left ul.second li{
+	margin-bottom: 6px;
+}
+.side-left ul.third li{
+	margin-bottom: 6px;
 }
 .side-left ul li:before{
 	display: block;
@@ -643,26 +652,35 @@ main {
 }
 .side-right h3 {
 	border: 1px solid rgb(121, 135, 141);
-	border-radius: 13px;
+	border-radius: 12px;
 	width: 136px;
 	height: 28px;
 	box-sizing: border-box;
 	padding-left: 30px;
-	margin: 14px 0 0 24px;
+	margin: 14px 0 0 23px;
 	background: url(img/h3-bg.png) no-repeat 4px 1px;
 	font: 14px/24px Lucida, Arial, sans-serif;
 	text-align: left;
 	color: #114165;
 }
+h3.second {
+	background-position: 3px 1px
+}
 .side-right ul{
 	list-style: none;
-	margin: 7px 0 0 34px;
+	margin: 7px 0 15px 34px;
+}
+.side-right ul.second {
+	margin: 10px 0 15px 34px;
 }
 .side-right ul li{
 	position: relative;
-	margin-bottom: 12px;
+	margin-bottom: 11px;
 	font: 13px/13px Lucida, Arial, sans-serif;
 	color: #465961;
+}
+.side-right ul.second li{
+	margin-bottom: 11px;
 }
 .side-right ul li input[type=checkbox]{
 	margin-right: 14px;
@@ -715,7 +733,7 @@ main {
 	border-radius: 4px;
 	margin-top: 15px;
 	background: #e5e7e8;
-	padding: 15px 0 3px 10px;
+	padding: 15px 0 6px 10px;
 	border-top: 1px solid #f3f4f4;
 	border-left: 1px solid #f8f9f9;
 	background: -moz-linear-gradient(top,  #e5e7e8 0%, #93a7b0 100%);
@@ -727,7 +745,7 @@ figure {
 	display: inline-block;
 	width: 139px;
 	height: auto;
-	margin: 0 10px 24px 14px;
+	margin: 0 12px 23px 13px;
 	box-sizing: border-box;
 }
 figure:hover .tovar-image {
@@ -765,16 +783,21 @@ figure .tovar-image img{
 	display: inline-block;
 }
 figure .tovar-price {
-	font: 900 16px/16px "Arial", sans-serif;
+	font: 16px/16px "Arial", sans-serif;
 	color: #114165;
 	display: block;
 	text-align: center;
 	margin-top: 4px;
 	letter-spacing: -1px;
-	font-style: oblique;
+	font-style: italic;
+	font-weight: 900;
+
 }
-figure .tovar-price span {
-	font-size: 12px;
+figure .tovar-price > span {
+	font-size: 13px;
+	font-weight: 700;
+	position: relative;
+	left: 4px;
 }
 
 .brands {
